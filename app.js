@@ -3,8 +3,8 @@ const path = require("path");
 
 const app = express();
 
-// Serve static files (CSS, images, etc.) from the "public" folder
-app.use(express.static(path.join(__dirname, "public")));
+// Serve static files (CSS, images, JS, and videos)
+app.use(express.static(path.join(__dirname)));
 
 // Route to serve index.html
 app.get("/", (req, res) => {
